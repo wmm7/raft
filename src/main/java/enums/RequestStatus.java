@@ -1,9 +1,16 @@
 package enums;
 
 public enum  RequestStatus {
-  APPEND_LOG(1),
-  RQUEST_VOTE(2),
-  COMMIT_LOG(3);
+  HEART_BEAT(0),
+  RETURN_HEART_BEAT(1),
+  APPEND_LOG(2),
+  RETURN_APPEND_LOG(3),
+  RQUEST_VOTE(4),
+  RETURN_RQUEST_VOTE(5),
+  COMMIT_LOG(6),
+  RETURN_COMMIT_LOG(7),
+
+  ;
 
 
   private int value;

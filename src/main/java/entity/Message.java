@@ -2,8 +2,7 @@ package entity;
 
 import enums.RequestStatus;
 
-public class RequestVote {
-
+public class Message {
   private int nodeId;
 
   private int term;
@@ -11,6 +10,8 @@ public class RequestVote {
   private RequestStatus requestStatus;
 
   private int logIndex;
+
+  private boolean ackStatus;
 
   public int getTerm() {
     return term;
@@ -36,4 +37,19 @@ public class RequestVote {
     this.logIndex = logIndex;
   }
 
+  public int getNodeId() {
+    return nodeId;
+  }
+
+  public void setNodeId(int nodeId) {
+    this.nodeId = nodeId;
+  }
+
+  public boolean isAckStatus() {
+    return ackStatus;
+  }
+
+  public void setAckStatus(boolean ackStatus) {
+    this.ackStatus = ackStatus;
+  }
 }
