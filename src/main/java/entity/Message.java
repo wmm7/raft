@@ -52,4 +52,10 @@ public class Message {
   public void setAckStatus(boolean ackStatus) {
     this.ackStatus = ackStatus;
   }
+
+  @Override
+  public String toString() {
+    return "Message{" + "nodeId=" + nodeId + ", term=" + term + ", requestStatus=" + requestStatus + ", logIndex="
+           + logIndex + ", ackStatus=" + ackStatus + '}';
+  }
 }

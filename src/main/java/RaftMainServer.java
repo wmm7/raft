@@ -19,10 +19,10 @@ public class RaftMainServer {
     nodeService_5.receive();
 
     nodeService_1.startTimer(1000l);
-    nodeService_2.startTimer(2000l);
-    nodeService_3.startTimer(3000l);
-    nodeService_4.startTimer(4000l);
-    nodeService_5.startTimer(5000l);
+//    nodeService_2.startTimer(2000l);
+//    nodeService_3.startTimer(3000l);
+//    nodeService_4.startTimer(4000l);
+//    nodeService_5.startTimer(5000l);
   }
 
 
